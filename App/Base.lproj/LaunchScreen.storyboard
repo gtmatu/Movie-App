@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="proxima-nova-light-597062c38b910.otf">
+            <string>ProximaNova-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="WBz-1c-7bo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Overlay" translatesAutoresizingMaskIntoConstraints="NO" id="Xur-tb-INb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demo Project" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Tt-pZ-OqP">
+                                <rect key="frame" x="99" y="212" width="177" height="30"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="30"/>
+                                <color key="textColor" red="0.97286552189999997" green="0.32286432390000003" blue="0.29076817630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WBz-1c-7bo" secondAttribute="trailing" id="7gN-jO-FQG"/>
+                            <constraint firstItem="8Tt-pZ-OqP" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Oy0-iy-Jl4"/>
+                            <constraint firstItem="Xur-tb-INb" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Yfs-5e-jgi"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Xur-tb-INb" secondAttribute="bottom" id="Z5N-Wv-iKC"/>
+                            <constraint firstItem="WBz-1c-7bo" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="d6v-xo-EK2"/>
+                            <constraint firstItem="Xur-tb-INb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="gam-mS-o70"/>
+                            <constraint firstItem="8Tt-pZ-OqP" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="192" id="ilx-GV-C0c"/>
+                            <constraint firstAttribute="trailing" secondItem="Xur-tb-INb" secondAttribute="trailing" id="lBk-C3-oEo"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="WBz-1c-7bo" secondAttribute="bottom" id="ro3-8q-7do"/>
+                            <constraint firstItem="WBz-1c-7bo" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="u0R-Wv-T1J"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="375" height="667"/>
+        <image name="Overlay" width="375" height="667"/>
+    </resources>
+</document>
